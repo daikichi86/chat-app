@@ -8,7 +8,6 @@ RSpec.describe User, type: :model do
     
     it "nameとemail、passwordとpassword_confirmationが存在すれば登録できること" do
       expect(@user).to be_valid
-      binding.pry
     end
 
     it "nameが空では登録できないこと" do
